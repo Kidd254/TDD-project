@@ -1,12 +1,13 @@
 class Solver
-    def factorial(n)
-        raise ArgumentError, 'Input must be a non-negative integer' if n < 0
+  def factorial(num)
+    raise ArgumentError, 'Input must be a non-negative integer' if num.negative?
 
-        result = 1
-        (1..n).each { |i| result *= i }
-        result
-    end
-    def reverse(word)
-        word.reverse
-      end
+    result = 1
+    (1..num).each { |i| result *= i }
+    result
   end
+
+  def reverse(word)
+    word.reverse
+  end
+end
