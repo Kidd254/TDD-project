@@ -26,17 +26,18 @@ RSpec.describe Solver do
   describe '#fizzbuzz' do
     it 'should returns "fizz" if the input is 3' do
       expect(Solver.fizzbuzz(3)).to eq('fizz')
-  end
+    end
 
-  it 'should returns "buzz" if the input is 5' do
-    expect(Solver.fizzbuzz(5)).to eq('buzz')
-  end
+    it 'should returns "buzz" if the input is 5' do
+      expect(Solver.fizzbuzz(5)).to eq('buzz')
+    end
 
-  it 'should returns "fizzbuzz" if the input is 15' do
-    expect(Solver.fizzbuzz(15)).to eq('fizzbuzz')
-  end
+    it 'should returns "fizzbuzz" if the input is 15' do
+      expect(Solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
 
-  it 'should returns "2" if the input is 2' do
-    expect(Solver.fizzbuzz(2)).to eq('2')
+    it 'should returns "2" if the input is 2' do
+      expect(Solver.fizzbuzz(2)).to eq('2')
+    end
   end
 end
